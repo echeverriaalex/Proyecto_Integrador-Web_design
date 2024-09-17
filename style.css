@@ -1,6 +1,11 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
@@ -12,6 +17,12 @@ header{
     height: 100px;
     position: fixed;
     background-color: rebeccapurple;
+    display: flex;
+
+}
+
+.menu-list{
+    background: red;
 }
 
 nav{
@@ -64,6 +75,23 @@ main{
     align-items: center;
     background: violet;
 }
+
+
+
+.hero{
+    display: flex;
+    gap: 20px;
+
+    padding: 20px;
+    background: black;
+}
+
+.hero img{
+    width: 60%;
+    border-radius: 10px;
+}
+
+
 
 .block-info{
     background: rgba(114, 7, 214, 0.527);
