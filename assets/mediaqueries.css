@@ -1,26 +1,23 @@
-@media (max-width: 882px) {
-
-    header{
-        width: 100%;
-        position: fixed;
-    }
-
+@media (max-width: 882px){
+    
+    
     nav{
+        /*
         width: 80%;
         z-index: 10;
         padding: 0px 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        display: none;
-        /*gap: 5px;*/
-        /* background: red; */
         margin: 0 auto;
+        */
+        display: none;
+        
     }
+    
     
     .container-logo{
         width: 20vw;
-        /*background: gray;*/
         padding: 0;
         margin: 0;
         justify-items: center;
@@ -44,20 +41,39 @@
         text-align: center;
     }
 
-
+    /* Hero */
     .hero{
         flex-direction: column;
         gap: 20px;
-        background: red;
-        
-        background: rgb(5, 128, 150);
+        padding: 15px;
     }
     
     .hero img{
         width: 100%;
     }
 
+    /* Cards */
+    .info-cards{
+        flex-direction: column;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 10px;
+    }
 
+    .card{
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .card p{
+        font-size: 16px;
+        padding: 10px;
+    }
+
+
+    /* Otros */
     .block-info{
         width: 80vw;
         margin: 10px;
@@ -66,18 +82,13 @@
 
     .list-products{
         width: 90vw;
-        /* background: greenyellow; */
     }
 
     .product{
         width: 90%;
-        /* background-color: red; */
     }
 
     .form-contact{
         width: 90vw;
     }
-
-    
-    
 }
