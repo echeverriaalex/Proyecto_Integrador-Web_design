@@ -54,22 +54,76 @@
 
     /* Cards */
     .info-cards{
-        flex-direction: column;
-        padding: 20px;
+        padding: 10px;
         border-radius: 10px;
         width: 100%;
-        margin: 0 10px;
+        /*margin: 0 5px;*/
     }
 
     .card{
-        width: 100%;
-        padding: 10px;
+        padding: 5px;
         height: auto;
     }
 
+    .list-products{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /*
+        justify-content: center;
+        align-items: stretch;
+        */
+        gap: 20px;
+        padding: 10px 0;
+        /* max-width: 1200px; */
+        /*background: #d3d3d3;*/
+        border-radius: 13px;
+        width: 100%;
+    }
+
+    
+
+    
+
     .card p{
         font-size: 16px;
-        padding: 10px;
+        padding: 5px;
+    }
+
+
+    /* Products */
+
+    .product{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .product img{
+        width: 50%;
+        max-width: 300px;
+    }
+    
+    .container-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .block-buy{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 5px;
+        align-items: center;
+        
+        padding: 5px;
     }
 
 
@@ -80,15 +134,63 @@
         border-radius: 20px;
     }
 
-    .list-products{
-        width: 90vw;
-    }
 
-    .product{
-        width: 90%;
-    }
 
     .form-contact{
         width: 90vw;
     }
 }
+
+
+@media (max-width: 576px){
+    .info-cards{
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 10px;
+        width: 100%;
+        margin: 0 5px;
+    }
+
+    .card{
+        padding: 5px;
+        height: auto;
+        width: 100%;
+    }
+
+
+    /* Products */
+
+    .product{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product img{
+        width: 100%;
+        max-width: unset;
+    }
+    
+    .container-wrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container-info{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .block-buy{
+        display: flex;
+        flex-direction: column;
+        
+        gap: 5px;
+        align-items: center;
+        
+        padding: 5px;
+    }
+
+}
+
