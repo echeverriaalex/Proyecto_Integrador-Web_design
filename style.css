@@ -25,15 +25,21 @@ header{
     padding: 5px 30px;
 }
 
+nav{
+    height: 100%;
+    z-index: 30;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-logo{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
-
-    
     height: 100%;
-    
     padding: 5px;
     /*background: lightseagreen;*/
 }
@@ -51,6 +57,10 @@ header{
     padding: 0;
 }
 
+.menu-label, #menu-toggle{
+    display: none;
+}
+
 
 .logo{
     background: red;
@@ -60,14 +70,6 @@ header{
 }
 
 
-nav{
-    height: 100%;
-    z-index: 30;
-    padding: 10px 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 
 .img-logo{
