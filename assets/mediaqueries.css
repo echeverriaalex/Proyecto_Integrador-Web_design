@@ -30,7 +30,9 @@
         border: 2px solid black;
         border-top: 0;
         border-radius: 0 0 15px 15px;
-        background-color: #081624ef;
+        background-color: var(--blue-dark);
+        top: 70px;
+        height: 300px;
     }
 
     .menu-label{
@@ -47,9 +49,15 @@
 
     #menu-toggle:checked + .menu-list{
         display: flex;
-        flex-direction: column;
-        top: 70px;
+        animation: left-slide 1s linear;
     }
+
+    /*
+    #menu-toggle:not(checked) + .menu-list{
+        display: flex;
+        animation: hidden 1s linear forwards;
+    }
+    */
 
 
     .container-logo{
