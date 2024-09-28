@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./assets/mediaqueries.css">
     <link rel="stylesheet" href="./assets/animations.css">
-    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/010/838/523/non_2x/3d-a-letter-text-free-png.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/logo.webp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Luxury Premium</title>
 </head>
@@ -14,7 +14,7 @@
     <header>
         <nav>
             <a class="container-logo" href="#hero">
-                <img class="img-logo" src="https://cdn3d.iconscout.com/3d/premium/thumb/piedra-preciosa-zafiro-11928643-9733983.png?f=webp" alt="">
+                <img class="img-logo" src="./assets/images/logo.webp" alt="">
                 <p>Luxury</p>
             </a>
             <label for="menu-toggle" class="menu-label">
@@ -23,10 +23,15 @@
             </label>
             <input id="menu-toggle" type="checkbox">
             <ul class="menu-list">
-                <li> <a href="#about-us">About Us</a> </li>
-                <li> <a href="#beneficios">Beneficios</a> </li>
-                <li> <a href="#contact">Contáctanos</a> </li>
+                <li> <a href="#hero">Inicio</a> </li>
+                <li> <a href="#about-us">Sobre nosotros</a> </li>
+                <li> <a href="#gallery">Galería</a> </li>
                 <li> <a href="#products">Productos</a> </li>
+                <li> <a href="#contact">Contáctanos</a> </li>
+                
+                <li> <a href="./pages/login.html">Iniciar sesión</a> </li>
+                <li> <a href="./pages/register.html">Registrarse</a> </li>
+               
             </ul>
         </nav>
     </header>
@@ -42,7 +47,7 @@
             </div>
             <img src="./assets/images/hero/hero11.jpg" alt="Imagen de la concecionaria premium">
         </section>
-        <section class="info-cards">
+        <section class="info-cards" id="about-us">
             <div class="card">
                 <img src="./assets/images/cards/ingeniero.jpg" alt="Imagen del laboratorio">
                 <h2>Laboratorio técnologico</h2>
@@ -65,6 +70,20 @@
                 <p>
                     Poseemos un extenso catálogo de accesorios y equipamiento para agregar y personalizar al vehículo de sus sueños, productos de alta calidad y fiabilidad.
                 </p>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery">
+            <h2>Galería de eventos asistidos</h2>
+            <div class="container-gallery">
+                <img src="./assets/images/gallery/autos.jpg" alt="">
+                <img src="./assets/images/gallery/expo-auto.jpg" alt="">
+                <img src="./assets/images/gallery/los-angeles-show.jpeg" alt="">
+                <img src="./assets/images/gallery/super-autos.avif" alt="">
+                <img src="./assets/images/gallery/super-cars.jpg" alt="">
+                <img src="./assets/images/gallery/offroad.jpg" alt="">
+                <img src="./assets/images/gallery/sports.jpg" alt="">
+                <img src="./assets/images/gallery/hotroad.jpg" alt="">
             </div>
         </section>
        
@@ -244,13 +263,13 @@
         </section>
 
         <section id="contact" class="section-contact">
-            <div class="container-contact">
+            <div class="container-form">
                 <h2 class="title-contact">Contacto</h2>
                 <p>
                     ¿Tiene alguna consulta? Nos contactaremos con usted, solo complete el siguiente formulario
                     con sus datos personales.
                 </p>
-                <form action="" class="form-contact">
+                <form action="" class="form">
                     <div class="contact-input">
                         <!-- <label>Nombre</label> -->
                         <input type="text" name="nombre" placeholder="Nombre">

@@ -4,6 +4,8 @@
 
 :root{
     --blue-dark: #081624;
+    --btn-blue:  #1760e6;
+    --gradient:  linear-gradient(to right, var(--blue-dark), var(--btn-blue));
 }
 
 *{
@@ -16,7 +18,13 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 80px;
-    width: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 header{
@@ -35,7 +43,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /*background: green;*/
 }
 
 .container-logo{
@@ -45,7 +52,6 @@ nav{
     gap: 5px;
     height: 100%;
     padding: 5px;
-    /*background: lightseagreen;*/
 }
 
 .container-logo .img-logo{
@@ -79,8 +85,6 @@ nav{
     align-items: center;
     gap: 30px;
     padding: 0 20px;
-    
-    /*background: rgb(7, 128, 209);*/
 }
 
 .menu-list a{
@@ -89,13 +93,13 @@ nav{
     font-family: "Mate SC", serif;
 }
 
-/* Main */
 
+/* Main */
 main{
     padding: 80px 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     gap: 30px;
 }
@@ -109,12 +113,8 @@ main{
     width: 100%;
     padding: 20px;
     max-width: 1600px;
-    /*
-    background: rgb(5, 128, 150);
-    background: #0794ad;
-    */
     background-color: var(--blue-dark);
-    animation: appear 4s linear;
+    animation: appear 2s linear;
 }
 
 .info-hero{
@@ -192,7 +192,6 @@ main{
     border-radius: 15px 15px 0px 0px;
 }
 
-
 .block-info{
     background: rgb(145, 86, 201);
     width: 50%;
@@ -210,13 +209,67 @@ main{
     font-size: 1.2rem;
 }
 
-
 p{
     font-size: 25px;
     padding: 30px 30px;
 }
 
+/* Gellery */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 
+    max-width: 1200px;
+    border-radius: 13px;
+    box-shadow: 5px 10px 15px 5px #b2b2b3;
+    padding: 10px;
+}
+
+.gallery h2{
+    font-size: 30px;
+    font-family: "Mate SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+.container-gallery{    
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    gap: 10px;
+/*
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+*/
+
+    width: 100%;
+    max-width: 1400px;
+    padding: 10px;
+}
+
+.container-gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*
+.container-gallery img:hover{
+    scale: 1.2;
+    transition: all 1s;
+    cursor: pointer;
+}
+*/
+
+
+
+/* Products */
 .container-list-products{
     display: flex;
     flex-direction: column;
@@ -253,9 +306,6 @@ p{
     width: 100%;
 }
 
-
-/* Products */
-
 .product{
     width: 350px;
     display: flex;
@@ -270,10 +320,6 @@ p{
     background: rgb(127, 76, 161);
     transition: all 1s;
     cursor: pointer;
-}
-
-.container-img, img{
-    
 }
 */
 
@@ -332,15 +378,21 @@ p{
 }
 
 
-/* Contact */
-
+/* Contact section */
 .section-contact{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 20px;
+    border-radius: 13px;
+    padding: 10px;
+    max-width: 1200px;
+    width: 100%;
+    box-shadow: 5px 10px 15px 5px #b2b2b3;
 }
 
-.container-contact{
+/* Forms */
+.container-form{
+    padding: 10px;
     width: 100%;
     max-width: 1200px;
     height: unset;
@@ -349,11 +401,24 @@ p{
     align-items: center;
 }
 
-/* Form */
+.container-form h2{
+    font-size: 30px;
+    text-align: center;
+    font-family: "Mate SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
-.form-contact{
-    width: 600px;
-    /* background: rgb(115, 39, 202); */
+.container-form p{
+    font-size: 18px;
+    padding: 10px;
+    width: 70%;
+}
+
+.form{
+    width: 100%; 
+    max-width: 600px;    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -361,24 +426,8 @@ p{
     justify-items: center;
     margin: 10px 0;
     border-radius: 15px;
-    /* border: 2px solid black; */
     padding: 20px 0;
     box-shadow: 5px 10px 15px 5px #b2b2b3;
-    
-}
-
-.container-contact h2{
-    font-size: 30px;
-    text-align: center;
-}
-
-.form-contact p{
-    font-size: 18px;
-}
-
-.container-contact p{
-    font-size: 14px;
-    padding: 10px;
 }
 
 .contact-input{
@@ -396,6 +445,7 @@ input{
     font-size: 20px;
     padding: 0 5px;
     border-radius: 5px;
+    max-width: 100%;
 }
 
 .button{
@@ -408,13 +458,35 @@ input{
     color: white;
 }
 
-/* Contact info */
+.container-form .extra{
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
+.container-form a{
+    border: 1px solid black;
+    padding: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--gradient);
+}
+
+
+/* Contact info */
 .container-contact-info{
     width: 100%;
     max-width: 1200px;
     display: flex;
     gap: 10px;
+    padding: 10px;
+    /*
+    border-radius: 13px;
+    box-shadow: 5px 10px 15px 5px #b2b2b3;
+    */
 }
 
 iframe{
@@ -470,16 +542,20 @@ iframe{
 }
 
 /* Footer */ 
-
 footer{
     width: 100%;
     padding: 50px;
     background: var(--blue-dark);
-    color: white;
+    color: white;  
 }
 
 footer p{
     text-align: center;
     font-size: 1.2rem;
     padding: 10px;
+
+    font-family: "Mate SC", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
