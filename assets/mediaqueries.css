@@ -160,7 +160,9 @@
     .product img{
         width: 50%;
         max-width: 300px;
+        max-height: 100%;
         border-radius: 0px;
+        aspect-ratio: 16/9;
     }
     
     .container-wrap{
