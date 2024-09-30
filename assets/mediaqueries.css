@@ -35,6 +35,14 @@
         height: 300px;
     }
 
+    .menu-list li{
+        /* background: red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+    }
+
     .menu-label{
         height: 40px;
         display: flex;
